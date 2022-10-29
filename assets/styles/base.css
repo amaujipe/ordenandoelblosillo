@@ -1,0 +1,51 @@
+:root {
+
+    /* Colors */
+    --primary-color : #118330;
+    --warn-color    : #efba0f;
+    --alert-color   : #d6342c;
+    --dark-color    : #32363b;
+    --light-color   : #ffffff;
+
+    /* Font Family */
+    --font-family: 'Lato', sans-serif;
+
+    /* Font Sizes */
+    --font-xl: 32px;
+    --font-l: 24px;
+    --font-m: 16px;
+    --font-s: 14px;
+    --font-xs: 12px;
+
+    /* Layout */
+    --gutter: 16px;
+    --max-witdh: 1200px;
+
+}
+
+/* Tags Styles */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--warn-color);
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+img, video {
+    max-width: 100%;
+}
