@@ -33,19 +33,53 @@ a {
 }
 
 body {
-    background-color: var(--dark-color);
-    color: var(--light-color);
     font-family: var(--font-family);
     line-height: 1.6;
     margin: 0;
+    margin-top: 174px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--warn-color);
+    color: var(--primary-color);
+    font-weight: 700;
     line-height: 1.25;
+    margin: 0 0 var(--gutter) 0;
     text-transform: uppercase;
 }
 
 img, video {
+    display: block;
     max-width: 100%;
+}
+
+
+/* Classes Styles */
+.button {
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 var(--gutter);
+    padding: calc(var(--gutter) * 2) 0;
+}
+
+.price {
+    font-weight: 700;
+}
+
+.price::before {
+    content: '$';
+    padding-right: 0.25rem;
+}
+
+.title {
+    font-size: var(--font-l);
+}
+
+.subtitle {
+    font-size: var(--font-m);
 }

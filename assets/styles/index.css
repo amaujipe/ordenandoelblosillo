@@ -1,0 +1,212 @@
+/* Header Styles
+
+    todo -> fondo del header transparente
+    todo -> posición fija del header
+    todo -> resolver el problema del icono
+
+*/
+.promo {
+    background-color: var(--alert-color);
+    color: var(--light-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+    position: fixed;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.promo__countdown {
+    font-size: calc(var(--font-xl) * 1.75);
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    padding-bottom: var(--gutter);
+    line-height: 1;
+}
+
+.promo__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo__cta span {
+    font-size: var(--font-l);
+}
+
+.promo__text {
+    font-size: var(--font-s);
+    font-weight: 700;
+    line-height: 1.25;
+    width: 65%;
+}
+
+.promo__button {
+    padding: calc( var(--gutter) / 2 ) calc( var(--gutter) * 1 );
+    background-color: var(--dark-color);
+    border-radius: 50px;
+    color: var(--light-color);
+    font-size: var(--font-s);
+}
+
+
+/* Main Section Styles
+
+    todo -> agregar los iconos en el area de "incluye"
+
+*/
+
+.product__main {
+    background-color: var(--dark-color);
+}
+
+.product__goals {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.product__goals .subtitle {
+    color: var(--warn-color);
+}
+
+.product__details {
+    background-color: var(--dark-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--font-s);
+    margin: var(--gutter) 0;
+    padding: calc( var(--gutter) * 1 );
+    color: var(--light-color);
+}
+
+.product__details[open] .product__summary::before {
+    content: '-';
+}
+
+.product__details:last-child {
+    margin-bottom: 0;
+}
+
+.product__summary {
+    list-style: none;
+    font-weight: 700;
+}
+
+.product__summary::before {
+    line-height: 0;
+    content: '+';
+    color: var(--primary-color);
+    font-size: var(--font-l);
+    padding-right: 0.5rem;
+}
+
+.product__includes {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.product__includes .subtitle {
+    color: var(--warn-color);
+}
+
+.product__properties div {
+    background-color: #222;
+    padding: var(--gutter);
+    margin-top: var(--gutter);
+    border-radius: 6px;
+}
+
+.product__properties p {
+    margin: 0;
+}
+
+
+/* CTA Styles
+
+    todo -> agregar los iconos de los métodos de pago
+
+*/
+.cta {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+}
+
+.cta .subtitle,
+.cta .price {
+    font-size: var(--font-xl);
+    color: var(--light-color);
+}
+
+.cta .price {
+    color: var(--warn-color);
+}
+
+.cta__button {
+    background-color: var(--alert-color);
+    color: var(--light-color);
+    width: 100%;
+    display: block;
+    padding: var(--gutter) 0;
+}
+
+.cta p {
+    margin-bottom: 0;
+}
+
+
+/* Trainer Styles */
+.trainer p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Certification Styles */
+.certification {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.certification .title {
+    color: var(--light-color);
+    font-size: var(--font-xl);
+}
+
+.certification span {
+    color: var(--warn-color);
+}
+
+.certificate {
+    margin-top: calc(var(--gutter) * 2);
+}
+
+
+/* Warranty Styles */
+.warranty {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.warranty__seal {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(var(--gutter) * 2);
+}
+
+.warranty .title {
+    color: var(--light-color);
+    font-size: var(--font-xl);
+}
+
+.warranty span {
+    color: var(--warn-color);
+}
+
+.warranty__seal {
+    /*margin-top: calc(var(--gutter) * 2);*/
+}
