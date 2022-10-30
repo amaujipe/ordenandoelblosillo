@@ -35,8 +35,7 @@ a {
 body {
     font-family: var(--font-family);
     line-height: 1.6;
-    margin: 0;
-    margin-top: 174px;
+    margin: 174px 0 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,6 +63,7 @@ img, video {
 
 .container {
     margin: 0 var(--gutter);
+    max-width: var(--max-witdh);
     padding: calc(var(--gutter) * 2) 0;
 }
 
@@ -82,4 +82,32 @@ img, video {
 
 .subtitle {
     font-size: var(--font-m);
+}
+
+
+@media screen and (min-width: 640px) {
+    body {
+        margin-top: 104px;
+    }
+
+    .button {
+        max-width: 300px;
+    }
+
+    .container {
+        margin: 0 calc(var(--gutter) * 4);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: calc(var(--font-m) * 1.125);
+    }
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: calc(var(--gutter) * 6);
+        padding-bottom: calc(var(--gutter) * 6);
+    }
 }
