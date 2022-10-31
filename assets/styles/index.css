@@ -74,7 +74,11 @@
 
 @media screen and (min-width: 1200px) {
     .promo .container {
-        max-width: 40%;
+        max-width: 900px;
+    }
+
+    .promo__button {
+        padding: calc( var(--gutter) / 1.5 ) calc( var(--gutter) * 3 );
     }
 }
 
@@ -179,6 +183,14 @@
 
     .product__description .title {
         font-size: var(--font-xl);
+    }
+
+    .product__description .product__info {
+        width: 60%;
+    }
+
+    .product__description .product__image {
+        width: 35%;
     }
 
     .product__goals .subtitle,
