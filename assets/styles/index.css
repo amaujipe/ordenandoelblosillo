@@ -1,10 +1,4 @@
-/* Header Styles
-
-    todo -> fondo del header transparente
-    todo -> posición fija del header
-    todo -> resolver el problema del icono
-
-*/
+/* Header Styles */
 .promo {
     background-color: var(--alert-color);
     color: var(--light-color);
@@ -42,6 +36,10 @@
     font-size: var(--font-s);
     font-weight: 700;
     line-height: 1.25;
+}
+
+.promo__text strong {
+    color: var(--warn-color);
 }
 
 .promo__button {
@@ -82,14 +80,14 @@
     }
 }
 
-/* Main Section Styles
-
-    todo -> agregar los iconos en el area de "incluye"
-
-*/
+/* Main Section Styles */
 
 .product__main {
     background-color: var(--dark-color);
+}
+
+.product__name {
+    text-transform: uppercase;
 }
 
 .product__goals {
@@ -139,6 +137,10 @@
 }
 
 .product__includes .subtitle {
+    color: var(--light-color);
+}
+
+.product__includes .subtitle span {
     color: var(--warn-color);
 }
 
@@ -151,6 +153,14 @@
 
 .product__properties p {
     margin: 0;
+}
+
+.product__properties p:before {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: var(--warn-color);
+    font-weight: 400;
+    font-size: var(--font-m);
 }
 
 @media screen and (min-width: 768px) {
@@ -197,7 +207,11 @@
     .product__content .subtitle,
     .product__includes .subtitle,
     .trainer .subtitle{
-        font-size: var(--font-l);
+        font-size: var(--font-xl);
+    }
+
+    .product__includes .subtitle {
+        text-align: center;
     }
 
     .product__details {
@@ -208,25 +222,27 @@
 }
 
 
-/* CTA Styles
-
-    todo -> agregar los iconos de los métodos de pago
-
-*/
+/* CTA Styles */
 .cta {
     background-color: var(--dark-color);
     color: var(--light-color);
     text-align: center;
 }
 
-.cta .subtitle,
-.cta .price {
+.cta .subtitle {
     font-size: var(--font-xl);
     color: var(--light-color);
 }
 
 .cta .price {
     color: var(--warn-color);
+    font-size: var(--font-xl);
+}
+
+.cta del {
+    font-size: var(--font-l);
+    color: var(--alert-color);
+    margin-right: var(--gutter);
 }
 
 .cta__button {
@@ -235,6 +251,17 @@
     width: 100%;
     display: block;
     padding: var(--gutter) 0;
+}
+
+.cta__payments {
+    width: 250px;
+    margin-top: calc(var(--gutter) / 2);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta__payments img {
+    border-radius: 10px;
 }
 
 .cta p {
@@ -283,6 +310,7 @@
 .certification .title {
     color: var(--light-color);
     font-size: var(--font-xl);
+    text-align: center;
 }
 
 .certification span {

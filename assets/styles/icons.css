@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "ordenandoelbolsillo";
-  src:url("/assets/icons/ordenandoelbolsillo.eot");
-  src:url("/assets/icons/ordenandoelbolsillo.eot?#iefix") format("embedded-opentype"),
-    url("/assets/icons/ordenandoelbolsillo.woff") format("woff"),
-    url("/assets/icons/ordenandoelbolsillo.ttf") format("truetype"),
-    url("/assets/icons/ordenandoelbolsillo.svg#ordenandoelbolsillo") format("svg");
+  src:url("../icons/ordenandoelbolsillo.eot");
+  src:url("../icons/ordenandoelbolsillo.eot?#iefix") format("embedded-opentype"),
+    url("../icons/ordenandoelbolsillo.woff") format("woff"),
+    url("../icons/ordenandoelbolsillo.ttf") format("truetype"),
+    url("../icons/ordenandoelbolsillo.svg#ordenandoelbolsillo") format("svg");
   font-weight: normal;
   font-style: normal;
 
@@ -40,4 +40,25 @@
 
 .icon-stopwatch:before {
   content: "\61";
+}
+.icon-credit-card:before {
+  content: "\62";
+}
+.icon-money:before {
+  content: "\63";
+}
+.icon-paypal:before {
+  content: "\64";
+}
+.icon-play:before {
+  content: "\65";
+}
+.icon-level:before {
+  content: "\66";
+}
+.icon-star:before {
+  content: "\68";
+}
+.icon-devices:before {
+  content: "\67";
 }

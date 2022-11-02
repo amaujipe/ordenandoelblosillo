@@ -71,7 +71,7 @@ img, video {
     font-weight: 700;
 }
 
-.price::before {
+.price del::before {
     content: '$';
     padding-right: 0.25rem;
 }
@@ -81,7 +81,7 @@ img, video {
 }
 
 .subtitle {
-    font-size: var(--font-m);
+    font-size: var(--font-l);
 }
 
 

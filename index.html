@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -12,14 +12,31 @@
     <link rel="stylesheet" href="./assets/styles/base.css">
     <link rel="stylesheet" href="./assets/styles/index.css">
     <title>Ordenando El Bolsillo - 12 Pasos para Salir de tu Crisis Financiera</title>
-
-    <!--
-
-        todo -> Revisar los microdatos a agregar a la web
-        todo -> Configurar OpenGrahp y TwitterCard para configurar el sitio
-
-    -->
-
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1921108948232009');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1921108948232009&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="12 Pasos para salir de tu Crisis Financiera" />
+    <meta property="og:description"
+          content="Con el Master class 12 Pasos Para Salir De Tu Crisis Financiera, encontrarás un rumbo para salir de ellas lo más pronto posible." />
+    <meta property="og:url" content="https://ordenandoelbolsillo.com/" />
+    <meta property="og:image" content="https://ordenandoelbolsillo.com/assets/images/CoverGris.jpg" />
+    <meta property="og:image:alt" content="12 Pasos para salir de tu Crisis Financiera" />
+    <meta property="og:video" content="https://ordenandoelbolsillo.com/assets/videos/12-pasos-para-salir-de-tu-crisis-financiera.mp4" />
 </head>
 <body>
 
@@ -27,13 +44,13 @@
         <div class="container">
             <div class="promo__countdown" id="countDown"></div>
             <div class="promo__cta">
-                <div class="promo__text">¡APROVECHA EL DESCUENTO HASTA HOY!</div>
-                <a class="promo__button button" href="#">Comprar</a>
+                <div class="promo__text">¡APROVECHA EL <strong>50% DE DESCUENTO</strong> HASTA HOY!</div>
+                <a class="promo__button button" href="https://go.hotmart.com/W76167111O?ap=cb60&offDiscount=031016" target="_blank">Comprar</a>
             </div>
         </div>
     </div>
 
-    <main class="product">
+    <main class="product" itemscope itemtype="https://schema.org/Course">
         <div class="product__main">
             <div class="container">
                 <div class="banner">
@@ -50,8 +67,8 @@
             <div class="container">
                 <section class="product__info">
                     <h1 class="title">¿Sabías que al igual que las crisis globales, las personas también sufren colapsos financieros?</h1>
-                    <p>Con el Master class 12 PASOS PARA SALIR DE TU CRISIS FINANCIERA, encontrarás un rumbo para salir de
-                        ellas lo más pronto posible.</p>
+                    <p itemprop="description">Con el Master class <span class="product__name" itemprop="name">12 Pasos Para Salir De Tu Crisis
+                        Financiera</span>, encontrarás un rumbo para salir de ellas lo más pronto posible.</p>
                 </section>
                 <div class="product__image">
                     <img src="./assets/images/MasterSello.jpg" alt="Sello de garantía del MasterClass">
@@ -194,91 +211,91 @@
         <div class="product__includes">
             <div class="container">
                 <section class="product__info">
-                    <h2 class="subtitle">Incluye</h2>
+                    <h2 class="subtitle">El Entrenamiento <span>Incluye</span></h2>
                 </section>
                 <div class="product__image">
-                    <img src="./assets/images/CoverGris.jpg" alt="Cover del producto">
+                    <img src="./assets/images/CoverGris.jpg" alt="12 Pasos para salir de tu Crisis Financiera" itemprop="image">
                 </div>
                 <div class="product__properties">
                     <div>
-                        <p>Lecciones paso a paso</p>
-                        <p>Nivel: Básico - Avanzado</p>
+                        <p class="icon-play">Lecciones paso a paso</p>
+                        <p class="icon-level">Nivel: Básico - Avanzado</p>
                     </div>
                     <div>
-                        <p>Entrenador destacado</p>
-                        <p>Acceso Multidispositivo 24/7</p>
+                        <p class="icon-star">Entrenador destacado</p>
+                        <p class="icon-devices">Acceso Multidispositivo 24/7</p>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-
-    <article class="cta">
-        <div class="container">
-            <h2 class="subtitle">Unete hoy por solo</h2>
-            <div class="price">49.99</div>
-            <p class="cta__expires">Esta oferta expira hoy</p>
-            <a href="#" class="cta__button button">Comprar ahora</a>
-            <span>Iconos de métodos de pago</span>
-            <p>Tu compra es 100% segura y se realiza con la tecnología de Hotmart</p>
-        </div>
-    </article>
-
-    <article class="trainer">
-        <div class="container">
-            <section>
-                <h2 class="subtitle">¿Quién será tu entrenador?</h2>
-                <div class="product__image">
-                    <img src="./assets/images/MasterSello.jpg" alt="Sello de garantía del MasterClass">
+        <article class="cta">
+            <div class="container">
+                <h2 class="subtitle">Unete hoy por solo</h2>
+                <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <del>49.99</del>
+                    <span itemprop="priceCurrency" content="USD">$</span>
+                    <span itemprop="price" content="25.00">25.00</span>
                 </div>
-            </section>
-            <div class="trainer__info">
-                <p>Tu entrenado es DIEGO FERNANDO AREVALO RIAÑO, Administrador de Empresas, egresado de la Universidad Externado de Colombia. Dentro de sus
-                trabajos se destacan la publicación de tres libros:</p>
-                <ul>
-                    <li>¡Ya llegó lunes! (Herramienta de crecimiento personal)</li>
-                    <li>El Método escarabajo (12 pasos para salir de tu Crisis Financiera), el cual usa de base para este curso.</li>
-                    <li>Los dueños de la finca, las familias que controlan a Colombia.</li>
-                </ul>
-                <p>Tiene además un canal en YouTube con más 17.000 suscriptores. En este canal profundiza temas de finanzas personales.</p>
-                <p>Trabajó por 20 años en un negocio familiar, un almacén de retail, el cual gracias a su esfuerzo y conocimiento creció hasta llegar a
-                    ser uno de los más grandes de la ciudad.</p>
-                <p>Gracias a su canal de YouTube (Diego Arevalo consultor financiero) ha ayudado a cientos de personas a mejorar sus finanzas
-                    personales y familiares.</p>
-                <p>Actualmente también está desarrollando un juego de mesa sobre finanzas personales que pronto saldrá al mercado.</p>
+                <p class="cta__expires">Esta oferta expira hoy</p>
+                <a href="https://go.hotmart.com/W76167111O?ap=cb60&offDiscount=031016" target="_blank" class="cta__button button">Comprar ahora</a>
+                <div class="cta__payments">
+                    <img src="./assets/images/payments.png" alt="Métodos de pago">
+                </div>
+                <p>Tu compra es 100% segura y se realiza con la tecnología de Hotmart</p>
             </div>
-        </div>
-    </article>
-
-    <article class="certification">
-        <div class="container">
-            <section>
-                <h2 class="title"><span>Certificado de</span> finalización</h2>
-                <p>Al finalizar el curso obtendrás el certificado de finalización del entrenamiento.</p>
-                <a href="#" class="cta__button button">Obtener asesoría</a>
-            </section>
-            <div class="certificate">
-                <img src="./assets/images/Certificado.jpg" alt="Certificado de terminación del curso">
+        </article>
+        <article class="trainer">
+            <div class="container">
+                <section>
+                    <h2 class="subtitle">¿Quién te entrenará?</h2>
+                    <div class="product__image">
+                        <img src="./assets/images/MasterSello.jpg" alt="Sello de garantía del MasterClass">
+                    </div>
+                </section>
+                <div class="trainer__info">
+                    <p>Tu entrenado es DIEGO FERNANDO AREVALO RIAÑO, Administrador de Empresas, egresado de la Universidad Externado de Colombia. Dentro de sus
+                    trabajos se destacan la publicación de tres libros:</p>
+                    <ul>
+                        <li>¡Ya llegó lunes! (Herramienta de crecimiento personal)</li>
+                        <li>El Método escarabajo (12 pasos para salir de tu Crisis Financiera), el cual usa de base para este curso.</li>
+                        <li>Los dueños de la finca, las familias que controlan a Colombia.</li>
+                    </ul>
+                    <p>Tiene además un canal en YouTube con más 17.000 suscriptores. En este canal profundiza temas de finanzas personales.</p>
+                    <p>Trabajó por 20 años en un negocio familiar, un almacén de retail, el cual gracias a su esfuerzo y conocimiento creció hasta llegar a
+                        ser uno de los más grandes de la ciudad.</p>
+                    <p>Gracias a su canal de YouTube (Diego Arevalo consultor financiero) ha ayudado a cientos de personas a mejorar sus finanzas
+                        personales y familiares.</p>
+                    <p>Actualmente también está desarrollando un juego de mesa sobre finanzas personales que pronto saldrá al mercado.</p>
+                </div>
             </div>
-        </div>
-    </article>
-
-    <article class="warranty">
-        <div class="container">
-            <div class="warranty__seal">
-                <img src="./assets/images/Garantia.png" alt="Garantía de devolución de dinero.">
+        </article>
+        <article class="certification">
+            <div class="container">
+                <section>
+                    <h2 class="title"><span>Certificado de</span> finalización</h2>
+                    <p>Al finalizar el curso obtendrás el certificado de finalización del entrenamiento.</p>
+                    <a href="https://go.hotmart.com/W76167111O?ap=cb60&offDiscount=031016" target="_blank" class="cta__button button">Obtener asesoría</a>
+                </section>
+                <div class="certificate">
+                    <img src="./assets/images/Certificado.jpg" alt="Certificado de terminación del curso">
+                </div>
             </div>
-            <section>
-                <h2 class="title"><span>7 dias</span> de garantía</h2>
-                <p>Al adquirir este entrenamiento cuentas con una garantía de satisfacción de <strong>7 diás sin condiciones</strong>: Sino te
-                    gusta el contenido o simplemente no supera tus expectativas <strong>te devolvemos el 100%</strong> de tu dinero sin hacer
-                    preguntas.</p>
-                <a href="#" class="cta__button button">Unirme sin riesgo</a>
-            </section>
-        </div>
-    </article>
-
+        </article>
+        <article class="warranty">
+            <div class="container">
+                <div class="warranty__seal">
+                    <img src="./assets/images/Garantia.png" alt="Garantía de devolución de dinero.">
+                </div>
+                <section itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <h2 class="title"><span>7 dias</span> de garantía</h2>
+                    <p itemprop="warranty">Al adquirir este entrenamiento cuentas con una garantía de satisfacción de <strong>7 diás sin condiciones</strong>: Sino te
+                        gusta el contenido o simplemente no supera tus expectativas <strong>te devolvemos el 100%</strong> de tu dinero sin hacer
+                        preguntas.</p>
+                    <a href="https://go.hotmart.com/W76167111O?ap=cb60&offDiscount=031016" target="_blank" class="cta__button button">Unirme sin riesgo</a>
+                </section>
+            </div>
+        </article>
+    </main>
     <script src="./assets/scripts/index.js" type="text/javascript"></script>
-
 </body>
 </html>
